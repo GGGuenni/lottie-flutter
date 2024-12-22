@@ -183,6 +183,8 @@ class LottieComposition {
 
   List<Layer> get layers => _parameters.layers;
 
+  List<String> get availablePrecomps => _parameters.precomps.keys.toList();
+
   List<Layer>? getPrecomps(String? id) {
     return _parameters.precomps[id];
   }
